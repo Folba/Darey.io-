@@ -64,4 +64,24 @@ sudo systemctl status apache2
 
 <img width="906" alt="Screenshot 2022-01-31 at 22 33 39" src="https://user-images.githubusercontent.com/97977311/152151208-2c94e382-3178-4bc4-908d-429cec01b192.png">
 
+The LoadbalancerpulicIp/index.php was returning error requested URL not found on this server because the following code wasn't included
+
+<img width="1170" alt="Screenshot 2022-02-02 at 15 07 37" src="https://user-images.githubusercontent.com/97977311/152218949-913c6c41-fa50-4033-a53f-84335a06edf4.png">
+
+        ProxyPreserveHost On
+        
+        ProxyPass / balancer://mycluster/
+        
+        ProxyPassReverse / balancer://mycluster/
+        
+  Issue resolved after adding codes in configuration accordingly in the 000-default.conf file
+  
+ <img width="1170" alt="Screenshot 2022-02-02 at 19 44 34" src="https://user-images.githubusercontent.com/97977311/152219978-a0810a8a-18ef-4f3d-b8ed-6bd93438f68a.png">
+ 
+  ### Open two ssh/Putty consoles for both Web Servers and run following command:
+
+  sudo tail -f /var/log/httpd/access_log
+  <img width="1680" alt="Screenshot 2022-01-31 at 23 19 48" src="https://user-images.githubusercontent.com/97977311/152220389-b50dd54e-86c5-4bb6-84f8-718c63a90f4b.png">
+  
+  
 
