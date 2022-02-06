@@ -55,6 +55,15 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
     
 ### Click "Build Now" button, if you have configured everything correctly, the build will be successfull and you will see it under #1
     
-### Click "Configure" your job/project Configure triggering the job from GitHub webhook: and Configure "Post-build Actions" to archive all the files – files resulted from a build ### are called "artifacts".
+### Click "Configure" your job/project Configure triggering the job from GitHub webhook: and Configure "Post-build Actions" to archive all the files – files resulted from a build are called "artifacts".
 
-   
+### Now, go ahead and make some change in any file in your GitHub repository (e.g. README.MD file) and push the changes to the master branch.
+
+### You will see that a new build has been launched automatically (by webhook) and you can see its results – artifacts, saved on Jenkins server.
+    
+<img width="1319" alt="console output 3" src="https://user-images.githubusercontent.com/97977311/152700556-114e6746-4c59-48d6-b187-3cfda5c7ea2e.png">
+
+ls /var/lib/jenkins/jobs/tooling_github/builds/<build_number>/archive/
+    
+<img width="1319" alt="lastest read me build" src="https://user-images.githubusercontent.com/97977311/152700616-77cf7674-48d6-4c40-a752-520cc4f5cf2d.png">
+
