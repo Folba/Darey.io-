@@ -49,3 +49,12 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 <img width="1281" alt="Add Git Source " src="https://user-images.githubusercontent.com/97977311/152699380-d577180e-67b6-4824-a288-66f0d4a86651.png">
     
 <img width="1319" alt="add credentials" src="https://user-images.githubusercontent.com/97977311/152699394-07c809ec-5334-4f45-9411-84a38a60b653.png">
+    
+    
+### Save the configuration and let us try to run the build. For now we can only do it manually.
+    
+### Click "Build Now" button, if you have configured everything correctly, the build will be successfull and you will see it under #1
+    
+### Click "Configure" your job/project Configure triggering the job from GitHub webhook: and Configure "Post-build Actions" to archive all the files – files resulted from a build ### are called "artifacts".
+
+   
