@@ -38,8 +38,14 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
     
 <img width="1009" alt="Jenkins_Is_Ready" src="https://user-images.githubusercontent.com/97977311/152698541-356eff1b-a2e3-46d6-8c3f-fea48446856d.png">    
     
-### Go to Jenkins web console, click "New Item" and create a "Freestyle project"    
+### Step 2 Go to Jenkins web console, click "New Item" and create a "Freestyle project"    
 
 <img width="1074" alt="Create Project Freestyle" src="https://user-images.githubusercontent.com/97977311/152699173-dbeb25a9-c885-47da-a52d-e4da21ffb5c4.png">
     
+### To connect your GitHub repository, you will need to provide its URL, you can copy from the repository itself
 
+### In configuration of your Jenkins freestyle project choose Git repository, provide there the link to your Tooling GitHub repository and credentials (user/password) so Jenkins could access files in the repository.
+    
+<img width="1281" alt="Add Git Source " src="https://user-images.githubusercontent.com/97977311/152699380-d577180e-67b6-4824-a288-66f0d4a86651.png">
+    
+<img width="1319" alt="add credentials" src="https://user-images.githubusercontent.com/97977311/152699394-07c809ec-5334-4f45-9411-84a38a60b653.png">
