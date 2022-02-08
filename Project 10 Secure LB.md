@@ -50,10 +50,14 @@ sudo snap install --classic certbot
 
 sudo ln -s /snap/bin/certbot /usr/bin/certbot
 
-
 sudo certbot --nginx
 
+<img width="1668" alt="create certificate" src="https://user-images.githubusercontent.com/97977311/153061689-a8dbc8fd-43a6-440e-9ad9-3dcb484b5550.png">
 
+dry run certbot
+
+
+<img width="1168" alt="dry run certbot" src="https://user-images.githubusercontent.com/97977311/153061576-5882a729-66de-4d7e-b7c8-9f0b5bc82f3f.png">
 Test secured access to your Web Solution by trying to reach https://<your-domain-name.com>
 
 <img width="1430" alt="secured" src="https://user-images.githubusercontent.com/97977311/153055100-a2b1c884-c784-4146-b2c9-9ffe9b636bb6.png">
