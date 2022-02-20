@@ -89,8 +89,18 @@ In your ansible-config-mgt GitHub repository, create a new branch that will be u
         name: wireshark
         state: latest
  
+#### use git commands to add, commit and push your branch to GitHub.
+
+git status
+
+git add <selected files>
+
+git commit -m "commit message" 
  
+<img width="1517" alt="git add and git commit" src="https://user-images.githubusercontent.com/97977311/154866227-d1c6d3e6-4c7c-40e4-9047-05dd338113f3.png">
  
+ #### Create a Pull request (PR)
  
+ #### Head back on your terminal, checkout from the feature branch into the master, and pull down the latest changes.
  
  
