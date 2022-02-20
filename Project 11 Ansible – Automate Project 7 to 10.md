@@ -25,3 +25,22 @@ sudo apt install ansible
 #### Test your setup by making some change in README.MD file in master branch and make sure that builds starts automatically and Jenkins saves the files (build artifacts)
 
 <img width="1245" alt="build test check atifact" src="https://user-images.githubusercontent.com/97977311/154843263-df52d31d-95a7-4bbc-ae72-5800da43e8e5.png">
+
+In your ansible-config-mgt GitHub repository, create a new branch that will be used for development of a new feature. To do this clone the the repository to local repo
+
+<img width="1517" alt="create branch " src="https://user-images.githubusercontent.com/97977311/154865418-133790ad-265c-4283-8f72-faa374602551.png">
+
+#### Checkout the newly created feature branch to your local machine and start building your code and directory structure
+
+#### Create a directory and name it playbooks – it will be used to store all your playbook files.
+
+
+#### Create a directory and name it inventory – it will be used to keep your hosts organised.
+
+
+#### Within the playbooks folder, create your first playbook, and name it common.yml
+
+
+#### Within the inventory folder, create an inventory file (.yml) for each environment (Development, Staging Testing and Production) dev, staging, uat, and prod respectively.
+
+<img width="1517" alt="mkdir and toch inventory and playbooks" src="https://user-images.githubusercontent.com/97977311/154865708-9da14400-23c5-4a33-91cb-04d62d698814.png">
