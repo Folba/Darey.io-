@@ -103,4 +103,34 @@ git commit -m "commit message"
  
  #### Head back on your terminal, checkout from the feature branch into the master, and pull down the latest changes.
  
+#### Run first Ansible test 
+
+ #### Ansible uses TCP port 22 by default, which means it needs to ssh into target servers from Jenkins-Ansible host – for this you can implement the concept of ssh-agent. Now you #### need to import your key into ssh-agent
+ 
+ eval `ssh-agent -s`
+ssh-add <path-to-private-key>
+ 
+#### Confirm the key has been added with the command below, you should see the name of your key 
+ 
+ssh-add -l
+ 
+ #### Now, ssh into your Jenkins-Ansible server using ssh-agent
+ 
+ ssh -A ubuntu@public-ip
+ 
+ #### Run the playbook with the following command
+ 
+ ansible-playbook -i /var/lib/jenkins/jobs/ansible/builds/<build-number>/archive/inventory/dev.yml /var/lib/jenkins/jobs/ansible/builds/<build-number>/archive/playbooks/common.yml
+ 
+ <img width="1679" alt="run play book" src="https://user-images.githubusercontent.com/97977311/154867031-27fa2193-0b5e-445c-ad87-94eea853284a.png">
+ 
+ 
+#### check if wireshark has been installed by running which wireshark or wireshark --version
+ 
+ <img width="1679" alt="wireshark version check" src="https://user-images.githubusercontent.com/97977311/154867231-957c93a3-4219-435c-9b7c-61d653b2afb7.png">
+ 
+<img width="1679" alt="wireshark version" src="https://user-images.githubusercontent.com/97977311/154867234-bcd535ac-f654-4394-ac98-d2e007d1d526.png">
+
+
+ 
  
